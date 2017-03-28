@@ -22,7 +22,7 @@
         <aside id="sidebar">
             <div id="logo">
                 <a title="{{title}}" href="{{index-uri}}">
-                    <img class="icon" src="/img/white-lotus.svg">
+                    <img class="icon" src="{{blog-prefix}}/img/white-lotus.svg">
                     <div class="text">{{title}}</div>
                     <!-- If your blog name is too wide, you may want to manually add breaks -->
                 </a>
@@ -31,7 +31,7 @@
             <nav id="sidebar-links">
                 <nav id="menucont">
                     <div class="menutitle">
-                        <svg class="icon icon-menu" aria-hidden="true"><use xlink:href="/img/social-icons.svg#icon-menu"></use></svg><span class="menu-text">Menu</span>
+                        <svg class="icon icon-menu" aria-hidden="true"><use xlink:href="{{blog-prefix}}/img/social-icons.svg#icon-menu"></use></svg><span class="menu-text">Menu</span>
                     </div>
                     <ul class="menu">
                         <li {% if home %} class="active" {% endif %}><a title="Home" href="{{index-uri}}"><div class="menu-item-text">Home</div></a></li>
@@ -49,9 +49,9 @@
 
                 <nav id="socialmedia">
                     <ul>
-                        <li><a title="LinkedIn" href="" rel="external"><svg class="icon icon-linkedin"><use xlink:href="/img/social-icons.svg#icon-linkedin"></use></svg></a></li>
-                        <li><a title="GitHub" href="" rel="external"><svg class="icon icon-github-circled"><use xlink:href="/img/social-icons.svg#icon-github-circled"></use></svg></a></li>
-                        <li><a title="RSS Feed" href="{{rss-uri}}"><svg class="icon icon-rss-squared"><use xlink:href="/img/social-icons.svg#icon-rss-squared"></use></svg></a></li>
+                        <li><a title="LinkedIn" href="" rel="external"><svg class="icon icon-linkedin"><use xlink:href="{{blog-prefix}}/img/social-icons.svg#icon-linkedin"></use></svg></a></li>
+                        <li><a title="GitHub" href="" rel="external"><svg class="icon icon-github-circled"><use xlink:href="{{blog-prefix}}/img/social-icons.svg#icon-github-circled"></use></svg></a></li>
+                        <li><a title="RSS Feed" href="{{rss-uri}}"><svg class="icon icon-rss-squared"><use xlink:href="{{blog-prefix}}/img/social-icons.svg#icon-rss-squared"></use></svg></a></li>
                     </ul>
                 </nav>
             </nav>
@@ -63,7 +63,7 @@
             <hr/>
             <div id="footercont">Copyright &copy; {{today|date:yyyy}} {{author}}
                 <p>Powered by <a href="http://cryogenweb.org">Cryogen</a></p>
-                <p>Styled by <a href="https://github.com/KingMob/cryogen-theme-lotus">Lotush Theme</a></p>
+                <p>Theme by <a href="https://github.com/KingMob/cryogen-theme-lotus">Lotus</a></p>
             </div>
         </article>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
