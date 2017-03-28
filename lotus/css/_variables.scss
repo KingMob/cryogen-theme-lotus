@@ -1,0 +1,53 @@
+// Colors
+
+$black: #000;
+$red: #A71E2E;
+$green: #00D400;
+$purple: #522158;
+$very-dark-grey: #222;
+$dark-grey: #444;
+$grey: #808080;
+$light-grey: #ccc;
+$very-light-grey: #f8f8f8;
+$white: #fff;
+
+$base-color: $purple;
+// $base-color: $green;
+$base-font-color: $very-dark-grey;
+$body-bgcolor: $very-light-grey;
+// $base-font-color: $very-light-grey;
+// $body-bgcolor: $very-dark-grey;
+
+// Fonts
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-heavy: 600;
+$font-weight-header: 700;
+$default-font-weight: $font-weight-normal;
+
+$default-font-size: 18px;
+$button-font-size: 16px;
+
+$default-line-height: 1.4;
+
+$default-font-family: "Oxygen", Verdana, Helvetica, Arial, sans-serif;
+$wide-font-family: "Montserrat", sans-serif;
+$mono-font-family: Inconsolata, monospaced;
+
+// Borders
+$default-border-color: $base-color;
+$default-border-width: 2px;
+$default-border-style: solid;
+$default-border: $default-border-width $default-border-style $default-border-color;
+$default-border-radius: 2px;
+
+// Spacing
+$default-gutter: 20px;
+$sidebar-width: 220px;
+
+// Media
+$tablet-breakpoint: 768px;
+$mobile-breakpoint: 480px;
+
+// Effects
+$default-opacity: 0.85;

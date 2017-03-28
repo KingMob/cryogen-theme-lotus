@@ -1,0 +1,147 @@
+@import "variables";
+
+.textleft {
+    text-align: left;
+}
+
+.textcentre {
+    text-align: center;
+}
+
+.textright {
+    text-align: right;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+strong, b {
+    font-weight: 600;
+}
+
+em, i {
+    font-style: italic;
+}
+
+h1 {
+    margin: 0 0 10px 0;
+    font-weight: $font-weight-header;
+    font-family: $wide-font-family;
+    text-transform: uppercase;
+    font-size: 46px;
+    line-height: 42px;
+    letter-spacing: -1px;
+}
+
+h2 {
+    margin: 30px 0 15px 0;
+    font-weight: $font-weight-header;
+    font-family: $wide-font-family;
+    text-transform: uppercase;
+    font-size: 23px;
+    line-height: 21px;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+    margin: 26px 0 13px 0;
+    font-weight: $font-weight-header;
+    font-family: $wide-font-family;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.4px;
+}
+
+h4, h5, h6 {
+    margin: 20px 0 10px 0;
+    font-weight: 100;
+    font-family: $wide-font-family;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+ul {
+    margin: 0 0 20px 35px;
+    list-style-type: square;
+}
+
+ul li {
+    padding: 0 0 0 2px;
+}
+
+ul ul {
+    margin: 0 0 0 25px;
+}
+
+ol {
+    margin: 0 0 20px 35px;
+    list-style-type: decimal;
+}
+
+ol li {
+    padding: 0 0 0 2px;
+}
+
+ol ol {
+    margin: 0 0 0 25px;
+}
+
+hr {
+    clear: both;
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 30px 0 40px 0;
+    border: none;
+    border-top: 4px solid $base-color;
+    text-align: center;
+}
+
+blockquote {
+  background: darken($body-bgcolor, 5%);
+  margin: 0 0 5px 0 !important;
+  color: #555;
+  border-left: 5px solid $base-color;
+  padding: 15px;
+  font-style: italic;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+blockquote .author {
+    text-align: right;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+@media screen and (max-width: 768px) {
+
+    .textcentre {
+        text-align: left;
+    }
+
+    .textright {
+        text-align: left;
+    }
+
+}
+
+code {
+  @if(lightness($body-bgcolor) > 50) {
+    background-color: darken($body-bgcolor, 5%);
+  } @else {
+    background-color: lighten($body-bgcolor, 5%);
+  }
+
+  // color: $white;
+  border-radius: $default-border-radius;
+  padding: 1px 3px;
+}
+
+code, kbd, samp {
+  font-family: $mono-font-family;
+}
