@@ -15,5 +15,7 @@ Next, edit your `config.edn` file. You will have to make 3 changes from the defa
 2. Add `"themes/lotus/css"` to the `:sass-src` key. (Remember, all the Sass dirs should be in `[]`, like `["themes/lotus/css"]`.)
 3. Add `"themes/lotus/img"` to the :resources key. (E.g., `["themes/lotus/img" "img"]`.)
 
+The sidebar is designed for a narrow width. You may want to insert `<br>` tags in your blog's name in `base.html` to make it look nicer.
+
 ---------------------------------------
 Copyright © 2017 by Matthew Davidson
