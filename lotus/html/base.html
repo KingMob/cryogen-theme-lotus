@@ -17,21 +17,30 @@
         {% style "css/blog.css" %}
 
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/tomorrow-night-eighties.min.css">
+        <script>
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+             (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+         })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-28517334-2', 'auto');
+         ga('send', 'pageview');
+        </script>
     </head>
     <body>
         <aside id="sidebar">
             <div id="logo">
                 <a title="{{title}}" href="{{index-uri}}">
-                    <img class="icon" src="{{blog-prefix}}/img/white-lotus.svg">
-                    <div class="text">{{title}}</div>
-                    <!-- If your blog name is too wide, you may want to manually add breaks -->
+                    <img class="icon" src="/img/white-lotus.svg">
+                    <div class="text desktop-and-tablet-only">Modulo<br>Lotus</div>
+                    <div class="text mobile-only">Modulo Lotus</div>
                 </a>
             </div>
 
             <nav id="sidebar-links">
                 <nav id="menucont">
                     <div class="menutitle">
-                        <svg class="icon icon-menu" aria-hidden="true"><use xlink:href="{{blog-prefix}}/img/social-icons.svg#icon-menu"></use></svg><span class="menu-text">Menu</span>
+                        <svg class="icon icon-menu" aria-hidden="true"><use xlink:href="/img/icons.svg#icon-menu"></use></svg><span class="menu-text">Menu</span>
                     </div>
                     <ul class="menu">
                         <li {% if home %} class="active" {% endif %}><a title="Home" href="{{index-uri}}"><div class="menu-item-text">Home</div></a></li>
@@ -44,14 +53,15 @@
                             <a href="{{nav-page.uri}}"><div class="menu-item-text">{{nav-page.title}}</div></a>
                         </li>
                         {% endfor %}
+                        <!-- <li><a title="RSS" href="{{rss-uri}}"><div class="menu-item-text">RSS</div></a></li> -->
                     </ul>
                 </nav>
 
                 <nav id="socialmedia">
                     <ul>
-                        <li><a title="LinkedIn" href="" rel="external"><svg class="icon icon-linkedin"><use xlink:href="{{blog-prefix}}/img/social-icons.svg#icon-linkedin"></use></svg></a></li>
-                        <li><a title="GitHub" href="" rel="external"><svg class="icon icon-github-circled"><use xlink:href="{{blog-prefix}}/img/social-icons.svg#icon-github-circled"></use></svg></a></li>
-                        <li><a title="RSS Feed" href="{{rss-uri}}"><svg class="icon icon-rss-squared"><use xlink:href="{{blog-prefix}}/img/social-icons.svg#icon-rss-squared"></use></svg></a></li>
+                        <li><a title="LinkedIn" href="https://www.linkedin.com/in/matthewdavidson1" rel="external"><svg class="icon icon-linkedin"><use xlink:href="/img/icons.svg#icon-linkedin"></use></svg></a></li>
+                        <li><a title="GitHub" href="https://github.com/KingMob" rel="external"><svg class="icon icon-github-circled"><use xlink:href="/img/icons.svg#icon-github-circled"></use></svg></a></li>
+                        <li><a title="RSS Feed" href="{{rss-uri}}"><svg class="icon icon-rss-squared"><use xlink:href="/img/icons.svg#icon-rss-squared"></use></svg></a></li>
                     </ul>
                 </nav>
             </nav>
@@ -63,7 +73,6 @@
             <hr/>
             <div id="footercont">Copyright &copy; {{today|date:yyyy}} {{author}}
                 <p>Powered by <a href="http://cryogenweb.org">Cryogen</a></p>
-                <p>Theme by <a href="https://github.com/KingMob/cryogen-theme-lotus">Lotus</a></p>
             </div>
         </article>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
