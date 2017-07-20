@@ -1,6 +1,8 @@
 # Lotus theme for Cryogen
 An elegant and responsive theme for the [Cryogen](http://cryogenweb.org/) static site generator. To see a demo, visit my site, [modulolotus.net](https://modulolotus.net).
 
+![Screenshots](screenshot.png)
+
 ## Dependencies
 
 Requires `cryogen-core` >= 0.1.54.
